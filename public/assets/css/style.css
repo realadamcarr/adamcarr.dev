@@ -1,0 +1,79 @@
+body {
+    background-color: #0D0208;
+    color: #00FF41;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background: #00FF41;
+    padding: 0.5em 1em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #b6ee7f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    text-align: center;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 2em auto;
+}
+
+.button, .btn-custom {
+    display: block;
+    padding: 1em;
+    background: transparent;
+    border: 2px solid #00FF41;
+    color: #00FF41;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: background 0.2s, color 0.2s;
+}
+
+.button:hover, .btn-custom:hover {
+    background: #00FF41;
+    color: #0D0208;
+}
+
+h1, h2, p {
+    color: #00FF41;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+hr {
+    border-color: #00FF41;
+}
