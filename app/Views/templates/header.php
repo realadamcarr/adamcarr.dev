@@ -3,10 +3,10 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Adam Carr - software developer</title>
-    <meta name="description" content="The small framework with powerful features">
+    <title><?= isset($title) ? $title . ' - Adam Carr' : 'Adam Carr - Software Developer' ?></title>
+    <meta name="description" content="<?= isset($description) ? $description : 'Adam Carr - Professional Software Developer' ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/acfavicon.png">
+    <link rel="shortcut icon" type="image/png" href="<?= base_url('assets/images/favicon/acfavicon.png') ?>">
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -24,11 +24,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('welcome_message') ?>">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('about') ?>">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('projects') ?>">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('freelancing') ?>">Freelancing</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('contact') ?>">Contact</a></li>
+                <li class="nav-item"><a class="nav-link <?= (isset($active_page) && $active_page == 'home') ? 'active' : '' ?>" href="<?= base_url('welcome_message') ?>">Home</a></li>
+                <li class="nav-item"><a class="nav-link <?= (isset($active_page) && $active_page == 'about') ? 'active' : '' ?>" href="<?= base_url('about') ?>">About</a></li>
+                <li class="nav-item"><a class="nav-link <?= (isset($active_page) && $active_page == 'projects') ? 'active' : '' ?>" href="<?= base_url('projects') ?>">Projects</a></li>
+                <li class="nav-item"><a class="nav-link <?= (isset($active_page) && $active_page == 'freelancing') ? 'active' : '' ?>" href="<?= base_url('freelancing') ?>">Freelancing</a></li>
+                <li class="nav-item"><a class="nav-link <?= (isset($active_page) && $active_page == 'contact') ? 'active' : '' ?>" href="<?= base_url('contact') ?>">Contact</a></li>
             </ul>
         </div>
     </div>

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<body>
-
-
 <?php
 $birthday = new DateTime('2003-07-05'); 
 $now = new DateTime();
 $age = $now->diff($birthday)->y;
 ?>
+
 <header class="container text-center my-4">
     <h1>Adam Carr</h1>
 </header>
@@ -32,9 +29,3 @@ $age = $now->diff($birthday)->y;
         </div>
     </div>
 </main>
-
-<!-- Bootstrap JS CDN -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
