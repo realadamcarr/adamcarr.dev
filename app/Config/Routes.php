@@ -10,3 +10,4 @@ $routes->get('about', 'Home::about');
 $routes->get('freelancing', 'Home::freelancing');
 $routes->get('contact', 'Home::contact');
 $routes->get('projects', 'Home::projects');
+$routes->get('sitemap.xml', 'Home::sitemap');

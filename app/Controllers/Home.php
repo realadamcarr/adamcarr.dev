@@ -81,4 +81,52 @@ class Home extends BaseController
             view('projects', $data) .
             view('templates/footer');
     }
+
+    public function sitemap()
+    {
+        $urls = [
+            [
+                'loc' => base_url(),
+                'lastmod' => date('Y-m-d'),
+                'priority' => '1.0'
+            ],
+            [
+                'loc' => base_url('about'),
+                'lastmod' => date('Y-m-d'),
+                'priority' => '0.8'
+            ],
+            [
+                'loc' => base_url('projects'),
+                'lastmod' => date('Y-m-d'),
+                'priority' => '0.9'
+            ],
+            [
+                'loc' => base_url('freelancing'),
+                'lastmod' => date('Y-m-d'),
+                'priority' => '0.8'
+            ],
+            [
+                'loc' => base_url('contact'),
+                'lastmod' => date('Y-m-d'),
+                'priority' => '0.7'
+            ]
+        ];
+
+        $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+        $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+        
+        foreach ($urls as $url) {
+            $xml .= '  <url>' . "\n";
+            $xml .= '    <loc>' . $url['loc'] . '</loc>' . "\n";
+            $xml .= '    <lastmod>' . $url['lastmod'] . '</lastmod>' . "\n";
+            $xml .= '    <priority>' . $url['priority'] . '</priority>' . "\n";
+            $xml .= '  </url>' . "\n";
+        }
+        
+        $xml .= '</urlset>';
+
+        return $this->response
+            ->setContentType('application/xml')
+            ->setBody($xml);
+    }
 }

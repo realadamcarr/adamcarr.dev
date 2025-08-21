@@ -1,23 +1,82 @@
-# CodeIgniter 4 Development
+# Adam Carr - Professional Software Developer Portfolio
 
-[![PHPUnit](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpunit.yml/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpunit.yml)
-[![PHPStan](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpstan.yml/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-phpstan.yml)
-[![Psalm](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-psalm.yml/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions/workflows/test-psalm.yml)
-[![Coverage Status](https://coveralls.io/repos/github/codeigniter4/CodeIgniter4/badge.svg?branch=develop)](https://coveralls.io/github/codeigniter4/CodeIgniter4?branch=develop)
-[![Downloads](https://poser.pugx.org/codeigniter4/framework/downloads)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/codeigniter4/CodeIgniter4)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub stars](https://img.shields.io/github/stars/codeigniter4/CodeIgniter4)](https://packagist.org/packages/codeigniter4/framework)
-[![GitHub license](https://img.shields.io/github/license/codeigniter4/CodeIgniter4)](https://github.com/codeigniter4/CodeIgniter4/blob/develop/LICENSE)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/codeigniter4/CodeIgniter4/pulls)
-<br>
+A modern, responsive portfolio website built with CodeIgniter 4, showcasing professional software development services and projects.
 
-## What is CodeIgniter?
+## 🚀 Features
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+- **Responsive Design**: Mobile-first approach with Bootstrap 5
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **SEO Optimized**: Meta tags, structured data, sitemap, and optimized content
+- **Performance Optimized**: Compressed assets, browser caching, and optimized images
+- **Security Enhanced**: Security headers, file protection, and input validation
+- **Contact Form**: Interactive contact form with validation
+- **Project Portfolio**: Showcase of development projects and skills
 
-This repository holds the source code for CodeIgniter 4 only.
-Version 4 is a complete rewrite to bring the quality and the code into a more modern version,
+## 📋 Tech Stack
+
+- **Backend**: PHP 8.2+ with CodeIgniter 4
+- **Frontend**: HTML5, CSS3, Bootstrap 5, JavaScript (ES6+)
+- **Database**: MySQL (for future contact form submissions)
+- **Icons**: Bootstrap Icons
+- **Version Control**: Git
+
+## 🛠️ Installation
+
+### Prerequisites
+- PHP 8.2 or higher
+- Composer
+- Web server (Apache/Nginx)
+- MySQL (optional, for contact form)
+
+### Setup Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/realadamcarr/adamcarr.dev.git
+   cd adamcarr.dev
+   ```
+
+2. **Install dependencies**
+   ```bash
+   composer install
+   ```
+
+3. **Configure environment**
+   ```bash
+   cp env .env
+   ```
+   Edit `.env` file with your settings:
+   ```
+   CI_ENVIRONMENT = production
+   app.baseURL = 'https://yourdomain.com/'
+   ```
+
+4. **Set permissions**
+   ```bash
+   chmod -R 755 writable/
+   ```
+
+5. **Configure web server**
+   Point document root to `public/` directory
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+## 📞 Contact
+
+- **Email**: adam@adamcarr.dev
+- **GitHub**: [@realadamcarr](https://github.com/realadamcarr)
+- **LinkedIn**: [adamcarr](https://linkedin.com/in/adamcarr)
+- **Website**: [adamcarr.dev](https://adamcarr.dev)
+
+---
+
+Built with ❤️ by Adam Carr using CodeIgniter 4 and Bootstrap 5
 while still keeping as many of the things intact that has made people love the framework over the years.
 
 More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
