@@ -61,7 +61,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link <?= (isset($active_page) && $active_page == 'home') ? 'active' : '' ?>" href="<?= base_url('welcome_message') ?>">
+                    <a class="nav-link <?= (isset($active_page) && $active_page == 'home') ? 'active' : '' ?>" href="<?= base_url('/') ?>">
                         <i class="bi bi-house"></i> Home
                     </a>
                 </li>
