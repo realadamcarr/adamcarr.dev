@@ -1,12 +1,12 @@
 <section class="section">
-    <div class="container">
+    <div class="container-fluid px-4">
         <div class="section-title">
             <h1 class="display-4 fw-bold text-primary-custom">Get In Touch</h1>
             <p class="lead">I'd love to hear about your project and discuss how I can help bring your ideas to life</p>
         </div>
         
-        <div class="row g-5">
-            <div class="col-lg-8">
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-7 col-xl-8">
                 <div class="card">
                     <div class="card-header bg-primary-custom text-white">
                         <h4 class="mb-0"><i class="bi bi-envelope"></i> Send Me a Message</h4>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             
-            <div class="col-lg-4">
+            <div class="col-lg-5 col-xl-4">
                 <!-- Contact Information -->
                 <div class="card mb-4">
                     <div class="card-header bg-secondary-custom text-white">

@@ -526,6 +526,88 @@ p {
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Contact page specific fixes */
+.container, .container-fluid {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    overflow-x: hidden;
+}
+
+.col-lg-4, .col-lg-5, .col-lg-7, .col-lg-8, .col-xl-4, .col-xl-8 {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+}
+
+/* Ensure cards don't overflow */
+.card {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.card-body {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll */
+* {
+    box-sizing: border-box;
+}
+
+.d-grid .btn {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Fix for mobile responsive issues */
+@media (max-width: 991.98px) {
+    .col-lg-4, .col-lg-5 {
+        margin-top: 2rem;
+    }
+    
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .g-4 > * {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /* Reduce motion for accessibility */
