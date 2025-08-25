@@ -112,10 +112,10 @@
                             <a href="https://github.com/realadamcarr" target="_blank" class="btn btn-outline-dark">
                                 <i class="bi bi-github me-2"></i> GitHub
                             </a>
-                            <a href="https://linkedin.com/in/adamcarr" target="_blank" class="btn btn-outline-primary">
+                            <a href="https://www.linkedin.com/in/adam-carr-16aab0288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-outline-primary">
                                 <i class="bi bi-linkedin me-2"></i> LinkedIn
                             </a>
-                            <a href="mailto:adam@adamcarr.dev" class="btn btn-outline-danger">
+                            <a href="mailto:adamcarr@" class="btn btn-outline-danger">
                                 <i class="bi bi-envelope me-2"></i> Email
                             </a>
                         </div>

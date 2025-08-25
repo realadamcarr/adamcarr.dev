@@ -12,7 +12,7 @@
                     <a href="https://github.com/realadamcarr" target="_blank" class="text-white me-3" title="GitHub">
                         <i class="bi bi-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/adamcarr" target="_blank" class="text-white me-3" title="LinkedIn">
+                    <a href="https://www.linkedin.com/in/adam-carr-16aab0288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white me-3" title="LinkedIn">
                         <i class="bi bi-linkedin"></i>
                     </a>
                     <a href="mailto:adam@adamcarr.dev" class="text-white me-3" title="Email">
