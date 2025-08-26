@@ -1,17 +1,18 @@
-/* Root Variables - Minimal Design */
+/* Root Variables - Dark Mode with Neon Green */
 :root {
-    --primary-color: #1a1a1a;
-    --secondary-color: #666666;
-    --accent-color: #000000;
-    --success-color: #22c55e;
-    --warning-color: #f59e0b;
-    --text-dark: #1a1a1a;
-    --text-light: #6b7280;
-    --bg-light: #fafafa;
-    --bg-main: #ffffff;
-    --border-color: #e5e7eb;
-    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --primary-color: #00ff41;
+    --secondary-color: #00cc33;
+    --accent-color: #00ff41;
+    --success-color: #00ff41;
+    --warning-color: #ffff00;
+    --text-dark: #00ff41;
+    --text-light: #00cc33;
+    --bg-light: #111111;
+    --bg-main: #000000;
+    --border-color: #003311;
+    --shadow: 0 1px 3px rgba(0, 255, 65, 0.3);
+    --shadow-lg: 0 4px 6px rgba(0, 255, 65, 0.2);
+    --neon-glow: 0 0 2px #00ff41;
 }
 
 /* Base Styles */
@@ -29,7 +30,7 @@ body {
     min-height: calc(100vh - 70px);
 }
 
-/* Navigation - Minimal */
+/* Navigation - Dark Mode with Neon Green */
 .navbar.bg-dark {
     background-color: var(--bg-main) !important;
     border-bottom: 1px solid var(--border-color);
@@ -42,12 +43,13 @@ body {
     color: var(--text-dark) !important;
     font-weight: 600;
     letter-spacing: -0.02em;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 .navbar-nav .nav-link {
     margin: 0 0.25rem;
     font-weight: 400;
-    transition: color 0.2s ease;
+    transition: all 0.3s ease;
     border-radius: 0;
     padding: 0.5rem 0.75rem !important;
     font-size: 0.9rem;
@@ -57,15 +59,17 @@ body {
 .navbar-nav .nav-link:hover {
     color: var(--text-dark) !important;
     background-color: transparent;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 .navbar-nav .nav-link.active {
     color: var(--text-dark) !important;
     background-color: transparent;
     font-weight: 500;
+    text-shadow: 0 0 1px #00ff41;
 }
 
-/* Hero Section - Minimal */
+/* Hero Section - Dark Mode with Neon Green */
 .hero {
     background: var(--bg-main);
     color: var(--text-dark);
@@ -91,6 +95,7 @@ body {
     animation: fadeInUp 1s ease-out;
     letter-spacing: -0.04em;
     color: var(--text-dark);
+    text-shadow: 0 0 2px #00ff41;
 }
 
 .hero .lead {
@@ -117,23 +122,27 @@ body {
     margin: 0 0.5rem;
 }
 
-/* Buttons - Minimal */
+/* Buttons - Dark Mode with Neon Green */
 .btn-primary {
-    background-color: var(--text-dark);
-    border-color: var(--text-dark);
+    background-color: transparent;
+    border: 1px solid var(--text-dark);
+    color: var(--text-dark);
     padding: 12px 24px;
     font-weight: 400;
     border-radius: 0;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     font-size: 0.9rem;
     letter-spacing: 0;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: var(--text-dark);
+    border-color: var(--text-dark);
     transform: none;
-    box-shadow: none;
+    box-shadow: 0 0 3px #00ff41;
+    color: var(--bg-main);
+    text-shadow: none;
 }
 
 .btn-outline-light {
@@ -142,38 +151,81 @@ body {
     padding: 12px 24px;
     font-weight: 400;
     border-radius: 0;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     font-size: 0.9rem;
     background: transparent;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 .btn-outline-light:hover {
     background-color: var(--text-dark);
     border-color: var(--text-dark);
-    color: white;
+    color: var(--bg-main);
     transform: none;
-    box-shadow: none;
+    box-shadow: 0 0 3px #00ff41;
+    text-shadow: none;
+}
+
+.btn-outline-dark {
+    border: 1px solid var(--text-light);
+    color: var(--text-light);
+    background: transparent;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--text-light);
+    border-color: var(--text-light);
+    color: var(--bg-main);
+    box-shadow: 0 0 2px var(--text-light);
+}
+
+.btn-outline-primary {
+    border: 1px solid var(--text-light);
+    color: var(--text-light);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--text-light);
+    border-color: var(--text-light);
+    color: var(--bg-main);
+    box-shadow: 0 0 2px var(--text-light);
+}
+
+.btn-outline-danger {
+    border: 1px solid var(--text-light);
+    color: var(--text-light);
+    background: transparent;
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--text-light);
+    border-color: var(--text-light);
+    color: var(--bg-main);
+    box-shadow: 0 0 2px var(--text-light);
 }
 
 .btn-custom {
-    background-color: var(--text-dark);
-    border-color: var(--text-dark);
-    color: white;
+    background-color: transparent;
+    border: 1px solid var(--text-dark);
+    color: var(--text-dark);
     padding: 12px 24px;
     font-weight: 400;
     border-radius: 0;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
     font-size: 0.9rem;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 .btn-custom:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    color: white;
+    background-color: var(--text-dark);
+    border-color: var(--text-dark);
+    color: var(--bg-main);
     transform: none;
-    box-shadow: none;
+    box-shadow: 0 0 3px #00ff41;
+    text-shadow: none;
 }
 
 /* Cards - Minimal */
@@ -270,19 +322,42 @@ body {
     letter-spacing: -0.01em;
 }
 
-/* Contact Form - Minimal */
+/* Contact Form - Neon Green */
 .form-control {
     border-radius: 0;
     border: 1px solid var(--border-color);
     padding: 12px 14px;
-    transition: border-color 0.2s ease;
+    transition: all 0.3s ease;
     font-size: 0.9rem;
     background-color: var(--bg-main);
+    color: var(--text-dark);
 }
 
 .form-control:focus {
     border-color: var(--text-dark);
-    box-shadow: none;
+    box-shadow: 0 0 3px #00ff41;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+}
+
+.form-control::placeholder {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+.form-select {
+    border-radius: 0;
+    border: 1px solid var(--border-color);
+    padding: 12px 14px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+}
+
+.form-select:focus {
+    border-color: var(--text-dark);
+    box-shadow: 0 0 3px #00ff41;
     background-color: var(--bg-main);
 }
 
@@ -468,7 +543,7 @@ footer ul li a:hover {
     font-size: 0.9rem;
 }
 
-/* Custom utilities - Minimal */
+/* Custom utilities - Dark Mode Minimal */
 .text-primary-custom {
     color: var(--text-dark) !important;
 }
@@ -478,20 +553,36 @@ footer ul li a:hover {
 }
 
 .bg-primary-custom {
-    background-color: var(--bg-main) !important;
+    background-color: var(--bg-light) !important;
     border-bottom: 1px solid var(--border-color) !important;
+    color: var(--text-dark) !important;
 }
 
 .bg-secondary-custom {
-    background-color: var(--bg-main) !important;
+    background-color: var(--bg-light) !important;
     border-bottom: 1px solid var(--border-color) !important;
+    color: var(--text-dark) !important;
 }
 
-/* Age display styling - Minimal */
+.bg-success {
+    background-color: var(--bg-light) !important;
+    color: var(--text-dark) !important;
+}
+
+.text-success {
+    color: var(--success-color) !important;
+}
+
+.text-primary {
+    color: var(--text-light) !important;
+}
+
+/* Age display styling - Neon Green */
 .age-highlight {
     color: var(--text-dark);
     font-weight: 600;
     font-size: 1em;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 /* Welcome message specific styles */
@@ -516,12 +607,13 @@ footer ul li a:hover {
     line-height: 1.7;
 }
 
-/* Additional minimal improvements */
+/* Additional minimal improvements - Neon Green */
 h1, h2, h3, h4, h5, h6 {
     color: var(--text-dark);
     font-weight: 500;
     letter-spacing: -0.02em;
     margin-bottom: 0.75rem;
+    text-shadow: 0 0 1px #00ff41;
 }
 
 h1 { font-size: 1.75rem; }
@@ -544,6 +636,7 @@ p {
 .display-4 {
     font-size: 2rem !important;
     font-weight: 600 !important;
+    text-shadow: 0 0 2px #00ff41;
 }
 
 .lead {
@@ -551,15 +644,36 @@ p {
     font-weight: 400 !important;
 }
 
-/* Remove all shadows and gradients */
-.card, .btn, .form-control, .navbar {
-    box-shadow: none !important;
-    text-shadow: none !important;
+/* Links */
+a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-/* Minimal icons */
+a:hover {
+    color: var(--text-dark);
+    text-shadow: 0 0 1px var(--text-dark);
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+/* Remove default shadows but keep subtle neon effects */
+.card, .form-control, .navbar {
+    box-shadow: none !important;
+}
+
+/* Minimal icons with subtle neon glow */
 .bi {
     font-size: inherit;
+}
+
+/* Strong text gets subtle neon glow */
+strong {
+    color: var(--text-dark);
+    text-shadow: 0 0 1px var(--text-dark);
 }
 
 /* Smooth scrolling */

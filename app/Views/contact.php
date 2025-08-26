@@ -115,7 +115,7 @@
                             <a href="https://www.linkedin.com/in/adam-carr-16aab0288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn btn-outline-primary">
                                 <i class="bi bi-linkedin me-2"></i> LinkedIn
                             </a>
-                            <a href="mailto:adamcarr@" class="btn btn-outline-danger">
+                            <a href="mailto:adamcarr616@gmail.com" class="btn btn-outline-danger">
                                 <i class="bi bi-envelope me-2"></i> Email
                             </a>
                         </div>
