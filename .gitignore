@@ -1,0 +1,52 @@
+# CodeIgniter 4 Application
+
+# Temporary and cache files
+writable/cache/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+!writable/cache/index.html
+!writable/logs/index.html
+!writable/session/index.html
+!writable/uploads/index.html
+
+# Environment file
+.env
+
+# Composer vendor directory
+vendor/
+
+# Node modules (if any)
+node_modules/
+
+# Generated static site for GitHub Pages
+dist/
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*~
+
+# Build files
+*.log
+
+# Database files
+*.sqlite
+*.db
+
+# Cache files
+*.cache
