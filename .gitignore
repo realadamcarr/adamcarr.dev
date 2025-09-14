@@ -1,0 +1,38 @@
+# Generated static files (build artifact)
+static-site/
+
+# CodeIgniter 4 specific ignores
+/writable/logs/*
+!/writable/logs/index.html
+
+/writable/cache/*
+!/writable/cache/index.html
+
+/writable/uploads/*
+!/writable/uploads/index.html
+
+/writable/session/*
+!/writable/session/index.html
+
+/writable/debugbar/*
+!/writable/debugbar/.gitkeep
+
+# Composer
+/vendor/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

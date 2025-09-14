@@ -11,12 +11,17 @@ A modern, responsive portfolio website built with CodeIgniter 4, showcasing prof
 - **Security Enhanced**: Security headers, file protection, and input validation
 - **Contact Form**: Interactive contact form with validation
 - **Project Portfolio**: Showcase of development projects and skills
+- **GitHub Pages Ready**: Automatic static site generation for easy deployment
+
+## 🌐 Live Website
+
+This portfolio is automatically deployed to GitHub Pages: **[https://realadamcarr.github.io/adamcarr.dev/](https://realadamcarr.github.io/adamcarr.dev/)**
 
 ## 📋 Tech Stack
 
 - **Backend**: PHP 8.2+ with CodeIgniter 4
 - **Frontend**: HTML5, CSS3, Bootstrap 5, JavaScript (ES6+)
-- **Database**: MySQL (for future contact form submissions)
+- **Deployment**: GitHub Pages with static site generation
 - **Icons**: Bootstrap Icons
 - **Version Control**: Git
 
@@ -58,6 +63,21 @@ A modern, responsive portfolio website built with CodeIgniter 4, showcasing prof
 
 5. **Configure web server**
    Point document root to `public/` directory
+
+## 🚀 Deployment to GitHub Pages
+
+This repository includes automatic GitHub Pages deployment! See [GITHUB_PAGES_DEPLOYMENT.md](GITHUB_PAGES_DEPLOYMENT.md) for full instructions.
+
+**Quick Start:**
+1. Fork this repository
+2. Enable GitHub Pages in Settings → Pages → Source: "GitHub Actions"  
+3. Push changes to the `master` branch
+4. Your site will be live at `https://yourusername.github.io/adamcarr.dev/`
+
+The deployment process automatically:
+- Generates static HTML files from the CodeIgniter application
+- Optimizes all assets and URLs for GitHub Pages
+- Deploys using GitHub Actions workflow
 
 ## 📱 Browser Support
 
