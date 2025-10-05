@@ -11,16 +11,16 @@
                 <div class="card project-card h-100">
                     <div class="card-header bg-primary-custom text-white">
                         <h5 class="card-title mb-0">
-                            <i class="bi bi-globe"></i> Personal Portfolio Website
+                            <i class="bi bi-phone"></i> Buglord (Final year project)
                         </h5>
                     </div>
                     <div class="card-body">
-                        <p class="card-text">A modern, responsive portfolio website built with CodeIgniter 4, featuring dynamic content management and professional design.</p>
+                        <p class="card-text">A gamified bug catching mobile app where users can learn about insects and have fun while battling and trading them </p>
                         <div class="mb-3">
-                            <span class="badge bg-secondary me-1">PHP</span>
-                            <span class="badge bg-secondary me-1">CodeIgniter</span>
-                            <span class="badge bg-secondary me-1">Bootstrap</span>
-                            <span class="badge bg-secondary me-1">MySQL</span>
+                            <span class="badge bg-secondary me-1">React Native</span>
+                            <span class="badge bg-secondary me-1">Google Vision API</span>
+                            <span class="badge bg-secondary me-1">Expo CLI</span>
+                            <span class="badge bg-secondary me-1">Firebase</span>
                         </div>
                         <div class="d-flex gap-2">
                             <a href="#" class="btn btn-primary btn-sm">
